@@ -1,12 +1,12 @@
 // Code your solution here
-function findMatching(array_of_drivers, target) {
-  return array_of_drivers.filter( driver => driver.toLowerCase() == target.toLowerCase());
+function findMatching(drivers, name) {
+  return drivers.filter( driver => driver.toLowerCase() == name.toLowerCase());
 }
 
-function fuzzyMatch(array_of_drivers, target) {
-  return array_of_drivers.filter( driver => driver.charAt(0) == target.charAt(0));
+function fuzzyMatch(drivers, name) {
+  return drivers.filter( driver => driver.charAt(0) == name.charAt(0));
 }
 
-function matchName(array_of_drivers, target) {
-  return array_of_drivers.filter( driver => driver.name == target);
+function matchName(drivers, name) {
+  return drivers.filter( driver => driver.name == name);
 }
