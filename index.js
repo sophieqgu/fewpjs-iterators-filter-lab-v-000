@@ -6,3 +6,7 @@ function findMatching(array_of_drivers, target) {
 function fuzzyMatch(array_of_drivers, target) {
   return array_of_drivers.filter( driver => driver.charAt(0) == target.charAt(0));
 }
+
+function matchName(array_of_drivers, target) {
+  
+}
